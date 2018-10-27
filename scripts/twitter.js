@@ -30,6 +30,11 @@ function deleteTweetStatsContainer() {
   statistics.forEach(e => e.parentNode.removeChild(e))
 }
 
+function deleteTrendItemStats() {
+  let statistics = document.querySelectorAll('.trend-item-stats')
+  statistics.forEach(e => e.parentNode.removeChild(e))
+}
+
 
 // Delete statistics
 setInterval(deleteActionCounts, 100)
@@ -37,3 +42,11 @@ setInterval(deleteNavStats, 250)
 setInterval(deleteStatsList, 100)
 setInterval(deleteMomentCapsuleLikes, 250)
 setInterval(deleteTweetStatsContainer, 500)
+setInterval(deleteTrendItemStats, 500)
+
+chrome.extension.onRequest.addListener(function(request, sender, sendResponse) {
+  if (request.method == 'ping') {
+    console.log("hello")
+    sendResponse({ data: 'pong' })
+  }
+});

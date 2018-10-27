@@ -5,7 +5,14 @@
 <style>
 
 body {
+  width: 150px;
   padding: 0 20px 10px 20px;
+}
+
+.toggle {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .switch {
@@ -71,12 +78,16 @@ input:checked + .slider:before {
 </head>
 <body>
 
-<h2>Remove Metrics</h2>
+<h2>Remove Vanity Metrics</h2>
 
-<label class="switch">
-  <input id="toggle" type="checkbox" checked>
-  <span class="slider round"></span>
-</label>
+<p class="toggle">
+  <label class="switch">
+    <input id="toggle" type="checkbox" checked>
+    <span class="slider round"></span>
+  </label>
+</p>
+
+<p>Made with 🙏 by <a target="_blank" href="https://twitter.com/maaslalani">Maas Lalani</a>, <a target="_blank" href="https://twitter.com/dashil36">Darshil Patel</a>, and <a target="_blank" href="https://twitter.com/jrdngonen">Jordan Gonen</a></p>
 
   <script src="../scripts/popup.js"></script>
 </body>
