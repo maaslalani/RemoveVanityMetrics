@@ -43,10 +43,3 @@ setInterval(deleteStatsList, 100)
 setInterval(deleteMomentCapsuleLikes, 250)
 setInterval(deleteTweetStatsContainer, 500)
 setInterval(deleteTrendItemStats, 500)
-
-chrome.extension.onRequest.addListener(function(request, sender, sendResponse) {
-  if (request.method == 'ping') {
-    console.log("hello")
-    sendResponse({ data: 'pong' })
-  }
-});
