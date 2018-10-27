@@ -35,7 +35,6 @@ function deleteTrendItemStats() {
   statistics.forEach(e => e.parentNode.removeChild(e))
 }
 
-
 // Delete statistics
 setInterval(deleteActionCounts, 100)
 setInterval(deleteNavStats, 250)
