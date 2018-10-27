@@ -1,17 +1,16 @@
 {
-  "name": "Remove Vanity Statistics",
+  "name": "Remove Vanity Metrics",
   "version": "0.0.1",
   "manifest_version": 2,
-  "description": "Hide Social Media Statistics for Twitter",
+  "icons": { "128": "icons/icon.png" },
+  "description": "hides the number of favorites, likes, and followers from your feed so you can focus on the content.",
   "browser_action": {
-    "default_title": "Remove Vanity Statistics",
+    "default_title": "Remove Vanity Metrics",
     "default_popup": "popups/popup.html"
   },
   "permissions": [
-    "tabs",
-    "storage",
-    "http://*/*",
-    "https://*/*",
+    "http://twitter.com/*",
+    "https://twitter.com/*",
     "activeTab"
   ],
   "content_scripts": [
